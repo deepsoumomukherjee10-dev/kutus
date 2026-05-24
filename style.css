@@ -53,8 +53,7 @@ body::before{
     width:450px;
     height:450px;
 
-    background:
-    rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.25);
 
     top:-120px;
     left:-120px;
@@ -64,8 +63,7 @@ body::after{
     width:350px;
     height:350px;
 
-    background:
-    rgba(255,192,203,0.20);
+    background:rgba(255,192,203,0.20);
 
     bottom:-100px;
     right:-100px;
@@ -85,52 +83,39 @@ body::after{
 }
 
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
 
 .hero{
     text-align:center;
-
     margin-bottom:50px;
 }
 
 .hero h1{
     font-size:4rem;
-
-    color:#ffffff;
-
+    color:#fff;
     margin-bottom:18px;
-
     line-height:1.2;
-
-    text-shadow:
-    0 5px 18px rgba(0,0,0,0.35);
+    text-shadow:0 5px 18px rgba(0,0,0,0.35);
 }
 
 .hero p{
     max-width:750px;
-
     margin:auto;
 
-    background:
-    rgba(255,255,255,0.45);
+    background:rgba(255,255,255,0.45);
 
     padding:20px 25px;
-
     border-radius:22px;
 
     backdrop-filter:blur(12px);
 
     color:#4b2e2e;
-
     font-weight:600;
-
     line-height:1.9;
-
     font-size:1.08rem;
 
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.06);
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
 }
 
 /* =========================
@@ -139,57 +124,41 @@ body::after{
 
 .cards{
     display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
 
 .card{
     border:none;
-
     min-height:165px;
 
     padding:25px;
 
     border-radius:26px;
 
-    background:
-    rgba(255,255,255,0.58);
+    background:rgba(255,255,255,0.58);
 
     backdrop-filter:blur(14px);
 
     color:#432818;
 
     font-size:1rem;
-
     font-weight:700;
-
     line-height:1.8;
 
     cursor:pointer;
 
     transition:0.35s ease;
 
-    border:
-    1px solid rgba(255,255,255,0.4);
+    border:1px solid rgba(255,255,255,0.4);
 
-    box-shadow:
-    0 12px 35px rgba(0,0,0,0.08);
+    box-shadow:0 12px 35px rgba(0,0,0,0.08);
 }
 
 .card:hover{
-
-    transform:
-    translateY(-10px)
-    scale(1.03);
-
-    background:
-    rgba(255,255,255,0.76);
-
-    box-shadow:
-    0 18px 40px rgba(255,105,135,0.20);
+    transform:translateY(-10px) scale(1.03);
+    background:rgba(255,255,255,0.76);
+    box-shadow:0 18px 40px rgba(255,105,135,0.2);
 }
 
 /* =========================
@@ -198,11 +167,9 @@ body::after{
 
 .popup{
     position:fixed;
-
     inset:0;
 
-    background:
-    rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.45);
 
     display:none;
 
@@ -222,79 +189,45 @@ body::after{
 
     border-radius:30px;
 
-    background:
-    linear-gradient(
-        to bottom right,
-        #ffffff,
-        #fff0f3
-    );
+    background:linear-gradient(to bottom right,#fff,#fff0f3);
 
     position:relative;
 
     animation:popupShow 0.4s ease;
 
-    box-shadow:
-    0 25px 60px rgba(255,120,150,0.28);
-
-    overflow:hidden;
-}
-
-/* Flower Background */
-.popup-content::before{
-
-    content:"🌸 🌷 🌺 🌼";
-
-    position:absolute;
-
-    bottom:10px;
-    right:15px;
-
-    font-size:1.5rem;
-
-    opacity:0.25;
+    box-shadow:0 25px 60px rgba(255,120,150,0.28);
 }
 
 .popup-content h2{
     color:#ff4d6d;
-
     margin-bottom:20px;
-
     font-size:2rem;
 }
 
 .popup-content p{
     color:#4b2e2e;
-
     line-height:2;
-
     font-size:1.06rem;
-
     font-weight:500;
 }
 
 /* =========================
-   CLOSE BUTTON
+   CLOSE
 ========================= */
 
 .close-btn{
     position:absolute;
-
     top:15px;
     right:22px;
 
     font-size:2rem;
-
     cursor:pointer;
 
     color:#999;
-
-    transition:0.3s;
 }
 
 .close-btn:hover{
-
     transform:rotate(90deg);
-
     color:#ff4d6d;
 }
 
@@ -304,53 +237,42 @@ body::after{
 
 .finalSection{
     text-align:center;
-
     margin-top:60px;
 }
 
 .finalBtn{
     border:none;
-
     padding:18px 36px;
 
     border-radius:50px;
 
-    background:
-    linear-gradient(
-        to right,
-        #ff758f,
-        #ff8fa3
-    );
+    background:linear-gradient(to right,#ff758f,#ff8fa3);
 
     color:white;
-
     font-weight:700;
-
     font-size:1rem;
 
     cursor:pointer;
 
     transition:0.3s;
 
-    box-shadow:
-    0 10px 30px rgba(255,105,135,0.25);
+    box-shadow:0 10px 30px rgba(255,105,135,0.25);
 }
 
 .finalBtn:hover{
-
-    transform:
-    scale(1.05);
+    transform:scale(1.05);
 }
 
 /* =========================
-   MUSIC BUTTON
+   MUSIC BUTTON (SHIFTED LEFT)
 ========================= */
 
 #musicBtn{
 
     position:fixed;
 
-    right:18px;
+    right:600px;   /* 👈 moved slightly LEFT from edge */
+
     bottom:18px;
 
     width:60px;
@@ -360,8 +282,7 @@ body::after{
 
     border-radius:50%;
 
-    background:
-    rgba(255,255,255,0.92);
+    background:rgba(255,255,255,0.92);
 
     backdrop-filter:blur(10px);
 
@@ -375,16 +296,13 @@ body::after{
     align-items:center;
     justify-content:center;
 
-    box-shadow:
-    0 8px 25px rgba(0,0,0,0.15);
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
 
     transition:0.3s ease;
 }
 
 #musicBtn:hover{
-
-    transform:
-    scale(1.08);
+    transform:scale(1.08);
 }
 
 /* =========================
@@ -393,21 +311,17 @@ body::after{
 
 .mountains{
     position:absolute;
-
     bottom:0;
 
     width:100%;
-
     height:300px;
 
     z-index:0;
-
     overflow:hidden;
 }
 
 .mountain{
     position:absolute;
-
     bottom:0;
 
     width:0;
@@ -417,35 +331,19 @@ body::after{
     border-right:220px solid transparent;
 }
 
-.mountain1{
-    left:-80px;
-
-    border-bottom:300px solid #d6a77a;
-}
-
-.mountain2{
-    left:25%;
-
-    border-bottom:250px solid #bc8a5f;
-}
-
-.mountain3{
-    right:-120px;
-
-    border-bottom:320px solid #a47148;
-}
+.mountain1{ left:-80px; border-bottom:300px solid #d6a77a; }
+.mountain2{ left:25%; border-bottom:250px solid #bc8a5f; }
+.mountain3{ right:-120px; border-bottom:320px solid #a47148; }
 
 /* =========================
-   FLOWERS
+   FLOWERS + EXTRAS
 ========================= */
 
 .flowers{
     position:fixed;
-
     bottom:15px;
 
     width:100%;
-
     text-align:center;
 
     font-size:2rem;
@@ -453,21 +351,13 @@ body::after{
     z-index:20;
 
     animation:floatFlowers 4s ease-in-out infinite;
-
-    pointer-events:none;
 }
-
-/* =========================
-   EXTRAS
-========================= */
 
 .extras{
     position:absolute;
-
     top:25px;
 
     width:100%;
-
     text-align:center;
 
     font-size:1.8rem;
@@ -481,18 +371,14 @@ body::after{
 
 .hearts{
     position:absolute;
-
     width:100%;
     height:100%;
-
     overflow:hidden;
 }
 
 .hearts span{
     position:absolute;
-
     bottom:-50px;
-
     animation:floatUp linear infinite;
 }
 
@@ -502,7 +388,6 @@ body::after{
 
 .panda{
     position:fixed;
-
     left:10px;
     bottom:10px;
 
@@ -519,19 +404,14 @@ body::after{
 
 .petals{
     position:fixed;
-
     inset:0;
 
-    overflow:hidden;
-
     pointer-events:none;
-
     z-index:2;
 }
 
 .petals span{
     position:absolute;
-
     top:-50px;
 
     animation:petalFall linear infinite;
@@ -542,299 +422,78 @@ body::after{
 ========================= */
 
 @keyframes popupShow{
-
-    from{
-        opacity:0;
-        transform:scale(0.7);
-    }
-
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
+    from{opacity:0; transform:scale(0.7);}
+    to{opacity:1; transform:scale(1);}
 }
 
 @keyframes floatUp{
-
-    from{
-        transform:
-        translateY(0)
-        rotate(0deg);
-
-        opacity:0;
-    }
-
-    20%{
-        opacity:0.8;
-    }
-
-    to{
-        transform:
-        translateY(-120vh)
-        rotate(360deg);
-
-        opacity:0;
-    }
+    from{transform:translateY(0) rotate(0deg); opacity:0;}
+    20%{opacity:0.8;}
+    to{transform:translateY(-120vh) rotate(360deg); opacity:0;}
 }
 
 @keyframes floatFlowers{
-
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-8px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
 }
 
 @keyframes floatExtras{
-
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-10px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
 }
 
 @keyframes bounce{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-10px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
 }
 
 @keyframes petalFall{
-
-    from{
-        transform:
-        translateY(-10vh)
-        rotate(0deg);
-    }
-
-    to{
-        transform:
-        translateY(120vh)
-        rotate(360deg);
-    }
+    from{transform:translateY(-10vh) rotate(0);}
+    to{transform:translateY(120vh) rotate(360deg);}
 }
 
 /* =========================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ========================= */
 
-/* Large Laptops */
-@media screen and (max-width:1200px){
-
-    .hero h1{
-        font-size:3.5rem;
-    }
-}
-
-/* Tablets */
-@media screen and (max-width:992px){
-
-    .hero h1{
-        font-size:3rem;
-    }
-
-    .cards{
-        grid-template-columns:
-        repeat(auto-fit,minmax(230px,1fr));
-    }
-
-    .mountains{
-        height:250px;
-    }
-}
-
-/* Mobile */
 @media screen and (max-width:768px){
 
-    body{
-        padding:35px 15px;
+    .hero h1{ font-size:2.5rem; }
 
-        align-items:flex-start;
-    }
-
-    .hero{
-        margin-bottom:38px;
-    }
-
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-    .hero p{
-        font-size:0.95rem;
-
-        padding:16px 18px;
-
-        line-height:1.8;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-
-        gap:18px;
-    }
-
-    .card{
-        width:100%;
-
-        min-height:auto;
-
-        padding:22px;
-
-        font-size:0.95rem;
-    }
-
-    .popup-content{
-        padding:32px 22px;
-    }
-
-    .popup-content h2{
-        font-size:1.5rem;
-    }
-
-    .popup-content p{
-        font-size:0.95rem;
-    }
-
-    .flowers{
-        font-size:1.5rem;
-    }
-
-    .extras{
-        font-size:1.4rem;
-    }
-
-    .mountains{
-        height:200px;
-    }
+    .cards{ grid-template-columns:1fr; }
 
     #musicBtn{
-
         width:54px;
         height:54px;
-
-        right:14px;
+        right:22px;
         bottom:14px;
-
-        font-size:1.1rem;
-    }
-
-    .panda{
-        font-size:3rem;
     }
 }
 
-/* Small Phones */
 @media screen and (max-width:480px){
 
-    body{
-        padding:28px 12px;
-    }
-
-    .hero h1{
-        font-size:2rem;
-    }
-
-    .hero p{
-        font-size:0.88rem;
-    }
-
-    .card{
-        padding:18px;
-
-        font-size:0.9rem;
-    }
-
-    .flowers{
-        font-size:1.2rem;
-
-        letter-spacing:3px;
-    }
-
-    .extras{
-        font-size:1.2rem;
-    }
+    .hero h1{ font-size:2rem; }
 
     #musicBtn{
-
         width:50px;
         height:50px;
-
-        right:10px;
+        right:18px;
         bottom:10px;
-
-        font-size:1rem;
     }
 }
 
-/* Very Small Phones */
 @media screen and (max-width:360px){
 
-    .hero h1{
-        font-size:1.7rem;
-    }
-
-    .hero p{
-        font-size:0.82rem;
-    }
-
-    .card{
-        font-size:0.84rem;
-    }
-
-    .flowers{
-        display:none;
-    }
-
-    .extras{
-        display:none;
-    }
+    .flowers,
+    .extras{ display:none; }
 
     #musicBtn{
-
         width:46px;
         height:46px;
-
-        right:8px;
+        right:14px;
         bottom:8px;
-    }
-}
-
-/* Landscape Phones */
-@media screen and (max-height:500px){
-
-    body{
-        padding-bottom:120px;
-    }
-
-    .flowers{
-        display:none;
-    }
-
-    .mountains{
-        height:120px;
     }
 }
